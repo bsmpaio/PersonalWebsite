@@ -1,0 +1,221 @@
+body, html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  color: #606060;
+}
+
+h1  {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0;
+   color: #404040;
+ }
+
+ h2 {
+  font-size: 1rem;
+  color: #808080
+ }
+
+p, h2, h3, ul, li {
+  line-height: 1.6;
+}
+h4  {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #404040;
+}
+
+
+h3 {
+  color: #A0A0A0;
+    font-size: 22px;
+  font-weight: bold;
+}
+
+/* ID'S Sections - Padding and Color */
+#profile, #contact {
+  background-color: #C0C0C0;
+}
+
+#skills {
+  background-color: #606060;
+}
+
+#profile, #skills {
+  padding: 2% 10%;
+}
+
+#contact, #footer {
+  padding: 2% 20%;
+}
+
+#footer {
+  background-color: #606060;
+}
+
+/*  Home - Background-image */
+#home {
+  background-image: url(../images/computer-pic.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #E0E0E0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  padding: 2% 10%;
+   background: rgba(0,0,0,0.5);
+}
+
+.nav-item {
+  padding: 0 15px;
+  color: #404040;
+}
+
+.navbar-light .navbar-nav{
+  color: #7f00ff;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #404040;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #6600CC;
+}
+
+.navbar-light .navbar-toggler {
+  color: #e100ff;
+  border-color: #e100ff;
+  border: 3px solid;
+}
+
+/* Home section */
+.big-heading {
+  font-size: 3rem;
+  color:#404040;
+  vertical-align: middle;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.secondary {
+  color: #FFF0;
+
+}
+.top-button {
+  background-color: #232526;
+  color: #D761E4;
+  opacity: 0.9;
+  font-weight: bold;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  margin: 10px;
+}
+
+.top-button:hover {
+  background-color: #D761E4;
+  color: #232526;
+}
+
+/* Profile Section */
+.profile-pic {
+  width: 55%;
+  border-radius: 70rem;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+    display: inline;
+   
+}
+.profile-content,  {
+  text-align: right;
+  background-color: #C0C0C0;
+  display: inline;
+   margin-left: 20px;
+   font-size: 2rem;
+   vertical-align: middle;
+}
+
+/* Skills Section */
+.skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  margin: 4% auto;
+  text-align: center;
+}
+
+.skills-div div {
+  flex: 1 1 150px;
+  margin: 15px;
+  background-color: #232526;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.skills-list {
+  text-align: left;
+}
+
+.icon-pic {
+  padding: 5%;
+}
+
+/* Contact and footer section text-align */
+.contact-div, .footer-div {
+  text-align: center;
+}
+
+/* Footer section */
+.social-media {
+  font-size: 1.5rem;
+  color: #e100ff;
+  padding: 2%;
+}
+
+.social-media:hover {
+  color: #7F00FF;
+}
+.copyright {
+  font-size: 5px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 900px) and (max-width: 1199.98px) {
+  .profile-pic {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #profile, #skills, #contact, #footer {
+    padding: 6%;
+  }
+
+  .skills-div {
+    display: block;
+    flex-wrap: nowrap;
+
+  }
+
+  .skills-div div {
+    flex: none;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
